@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
 from flask import jsonify
+from urllib.request import urlretrieve
 import tensorflow as tf
 import numpy as np
 import requests
@@ -17,9 +18,13 @@ def predict():
 
     if parameters['url'] != '':
         print("URL passed")
-        img_data = requests.get(parameters['url']).content
-        with open('image_name.jpg', 'wb') as handler:
-          handler.write(img_data)
+        urlretrieve(parameters['url'],'/tmp/image_file.jpg')
+        img_data = tf.keras.preprocessing.image.load_img(
+               '/tmp/image_file.jpg' , target_size=(179, 179)
+              )
+        x = np.array(img_data)
+        img_data = np.array([x])
+        
     elif parameters['path'] != '':
         print("Local file used")
         img_data = tf.keras.preprocessing.image.load_img(
