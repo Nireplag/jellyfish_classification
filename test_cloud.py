@@ -1,13 +1,11 @@
 import requests
 
-
-url = 'http://localhost:9696/predict' # localhost test
-#url = 'https://jellyfish-classification-2rtrkbrwna-uc.a.run.app/predict' # GCP deploy
+url = 'https://jellyfish-classification-2rtrkbrwna-uc.a.run.app/predict' # GCP deploy
 
 
 image_data = {
-    "url": '',
-    "path": './dataset/valid/barrel_jellyfish/09.jpg'
+    "url": 'https://github.com/Nireplag/jellyfish_classification/raw/main/dataset/valid/barrel_jellyfish/09.jpg',
+    "path": ''
 }
 
 response = requests.post(url, json=image_data).json()
