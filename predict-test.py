@@ -6,7 +6,7 @@ url = 'http://localhost:9696/predict' # localhost test
 
 image_data = {
     "url": '',
-    "path": './jellyfish_classification/dataset/valid/barrel_jellyfish/09.jpg'
+    "path": './dataset/valid/barrel_jellyfish/09.jpg'
 }
 
 
