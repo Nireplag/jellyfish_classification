@@ -10,6 +10,9 @@ This repo is created for the projects done for the ML_ZOOMCAMP from data.talks
 - Pipfile and Pipfile.lock: files to create a pipenv to execute files and build container.
 - Dockerfile: docker configuration file to create containerto be run locally or at cloud.
 - dataset.zip: dataset to be used in case link to original file repository is removed. This dataset was originated from [link](https://www.kaggle.com/datasets/anshtanwar/jellyfish-types?select=Train_Test_Valid).
+- 44.jpg: local file to be used into predict_test.py file in path.
+- test_cloud.py: file used to test cloud deployment.
+- dataset/valid: files to be used with test_cloud and predict-test files as url under payload.
   
 ## Description of the problem
 The dataset used is related to determine the jellyfish species and can be used into image analysis for invasive species and also if they are dangerous to humans and other animals.
