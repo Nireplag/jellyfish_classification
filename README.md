@@ -98,7 +98,7 @@ At end of deployment you will have the following:
 
 ### Testing Cloud deployment
 
-The service is already running under the url [[https://water-potability-2rtrkbrwna-uc.a.run.app](https://jellyfish-classification-2rtrkbrwna-uc.a.run.app)].
+The service is already running under the url [[https://jellyfish-classification-2rtrkbrwna-uc.a.run.app](https://jellyfish-classification-2rtrkbrwna-uc.a.run.app)].
 
 This url can be tested using test_cloud.py file with an additional '/predict'.
 
